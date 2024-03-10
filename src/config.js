@@ -1,1 +1,1 @@
-export const OpenAIAPIKey = 'insert api key here';
+export const OpenAIAPIKey = 'insert api key';

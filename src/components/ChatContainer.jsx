@@ -1,4 +1,5 @@
 import React from "react";
+import "./ChatContainer.css";
 
 
 function ChatContainer({ chatLog, sendMessage, handleSubmit }) {
@@ -8,7 +9,11 @@ function ChatContainer({ chatLog, sendMessage, handleSubmit }) {
         {chatLog.map((entry, index) => (
           <div key={index}>
             {entry.user && <div>User: {entry.user}</div>}
-            {entry.bot && <div>Bot: {entry.bot}</div>}
+            {entry.bot && (
+              <div className="bot-message">
+                Bot: <pre>{entry.bot}</pre>
+              </div>
+            )}
           </div>
         ))}
       </div>
