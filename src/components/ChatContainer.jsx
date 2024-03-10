@@ -1,5 +1,6 @@
 import React from "react";
 
+
 function ChatContainer({ chatLog, sendMessage, handleSubmit }) {
   return (
     <div className="chat-container">

@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import ChatContainer from "./components/ChatContainer";
+import { OpenAIAPIKey } from "./config";
 
 const API_URL = 'https://api.openai.com/v1/chat/completions';
-const API_KEY = 'insert api key here';
 
 function App() {
   const [chatLog, setChatLog] = useState([]);
@@ -14,7 +14,7 @@ function App() {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
-          'Authorization': `Bearer ${API_KEY}`
+          'Authorization': `Bearer ${OpenAIAPIKey}`
         },
         body: JSON.stringify({
           model: 'gpt-3.5-turbo',
