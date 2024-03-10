@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import ChatContainer from "./components/ChatContainer";
 
 const API_URL = 'https://api.openai.com/v1/chat/completions';
-const API_KEY = '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';
+const API_KEY = 'insert api key here';
 
 function App() {
   const [chatLog, setChatLog] = useState([]);
